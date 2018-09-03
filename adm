@@ -1,0 +1,10 @@
+;adding 5 numbers
+lxi h,0000h;
+mvi b,05h;
+ani 01h;
+loop: add m;
+inx h;
+dcr b;
+jnz loop;
+sta 0004h;
+hlt;

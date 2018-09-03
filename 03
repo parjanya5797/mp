@@ -1,0 +1,11 @@
+;multiply two numbers
+lda 0001h;
+mov c,a;
+lda 0002h;
+mov b,a;
+ani 01h;
+loop: add c;
+dcr b;
+jnz loop;
+sta 0003h;
+hlt;

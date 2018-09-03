@@ -1,0 +1,12 @@
+;check odd or even
+lda 0001h;
+ani 01h;
+jz even;
+;odd
+mvi a,01h;
+out 01h;
+jmp stop;
+
+even: mvi a,02h;
+out 01h;
+stop: hlt;
